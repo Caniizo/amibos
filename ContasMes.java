@@ -13,13 +13,16 @@ public class ContasMes {
 	public ContasAno contaAno;
 	
 	
-	
+	public ContasMes(int mesDoAno) {
+		this.mes = mesDoAno;
+	}
 	
 	public void setMes(int mes) {  //define o mes// Esta inserido dentro do ano
 		this.mes = mes;
 		System.out.println("Voce criou um novo mes: " + mes);
 		
 	}
+
 	
 	public void lancarGasto(double gasto, String informacao) { //lança um gasto para determinado mes e ano	
 		//this.informacao = this.informacao;

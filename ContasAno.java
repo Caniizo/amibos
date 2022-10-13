@@ -13,6 +13,8 @@ public class ContasAno{
 	public ContasAno(int ano, int mesDoAno) {  //define o ano// Dentro do objeto ano terá um objeto contasMes para cada mes do ano
 		this.ano = ano;
 		this.mesDoAno = mesDoAno;
+		ContasMes contaMes = new ContasMes(mesDoAno);
+		System.out.println(contaMes.mes);
 	//	ContasAno.ContasDoMes = 23; HAAAAAAAAAAAAAAA
 		if(mesDoAno == 1) {
 		nomeMesDoAno = "Janeiro";
@@ -35,6 +37,5 @@ public class ContasAno{
 		mesDespesa.lancarGasto(gasto, informacao);
 		System.out.println("Voce gastou " + gasto + "R$ em " + nomeMesDoAno + " Em " + informacao);
 	}
-	
 	
 }
