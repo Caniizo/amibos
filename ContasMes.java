@@ -25,7 +25,7 @@ public class ContasMes {
 
 	
 	public void lancarGasto(double gasto, String informacao) { //lança um gasto para determinado mes e ano	
-		//this.informacao = this.informacao;
+		this.gasto = gasto;
 		//this.gastoMes[i] = this.gasto;
 		//this.informacaoGasto[i] = this.informacao;
 		dinheiroSaldo = dinheiroSaldo - this.gasto;
@@ -33,14 +33,18 @@ public class ContasMes {
 		//i++;		
 	}
 	
-	public void mostrarGastos() {   //verificar gastos do mes
-		if(i==0) {
-			System.out.println("Não existem gastos lancados");
-		} else {
-			for(int j=0;j<i;j++) {
-				System.out.println(gastoMes[j]);
-				System.out.println(informacaoGasto[j]);
-			}
-		}
+	public String mostrarGastos() {   //verificar gastos do mes
+		return Double.toString(gasto);
+		
+		
+		
+		//if(i==0) {
+		//	System.out.println("Não existem gastos lancados");
+		//} else {
+		//	for(int j=0;j<i;j++) {
+		//		System.out.println(gastoMes[j]);
+		//		System.out.println(informacaoGasto[j]);
+		//	}
+		//}
 	}
 }
